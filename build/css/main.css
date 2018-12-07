@@ -1,0 +1,314 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'BrandonGrotesque-Bold';
+  src: url("../Font/BrandonGrotesque-Bold.ttf"); }
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 940px; }
+
+.text-white {
+  color: #ffffff;
+  font-family: "Brandon Grotesque"; }
+
+.text-black {
+  color: black;
+  font-family: "Brandon Grotesque"; }
+
+.title {
+  color: black;
+  font: 300 60px/75px "Brandon Grotesque";
+  letter-spacing: -1.5px; }
+  .title .bold {
+    font-weight: 700; }
+
+.midle-text {
+  color: #d4d4d4;
+  font: 400 18px "Brandon Grotesque"; }
+
+@media (max-width: 768px) {
+  .title {
+    font: 300 30px/50px "Brandon Grotesque"; } }
+
+.home {
+  padding-top: 75px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover; }
+  .home header {
+    display: flex;
+    justify-content: space-between; }
+    .home header .nav {
+      display: flex; }
+      .home header .nav li {
+        margin-right: 30px; }
+  .home .text-heading {
+    margin-top: 160px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; }
+    .home .text-heading p {
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: -0.8px; }
+    .home .text-heading .heading {
+      margin-bottom: 80px;
+      margin-top: 50px;
+      font-size: 66px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -1.65px; }
+    .home .text-heading .btn {
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 23px;
+      font-weight: 700; }
+
+@media (max-width: 992px) {
+  .home header {
+    text-align: center; }
+  .home .text-heading {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    justify-content: center; }
+    .home .text-heading .heading {
+      margin-bottom: 50px;
+      margin-top: 30px;
+      font-size: 45px; } }
+
+@media (max-width: 768px) {
+  .home {
+    text-align: center; }
+    .home header {
+      display: block; }
+      .home header .nav {
+        justify-content: center; }
+        .home header .nav li {
+          margin-right: 20px; }
+    .home .text-heading {
+      margin-top: 25px;
+      margin-bottom: 25px; }
+      .home .text-heading p {
+        font-size: 18px; }
+      .home .text-heading .heading {
+        margin-bottom: 25px;
+        margin-top: 30px;
+        font-size: 30px; } }
+
+.services .service_item {
+  margin: 100px auto;
+  display: flex;
+  color: #222222;
+  font: 500 22px "Brandon Grotesque";
+  letter-spacing: -0.55px; }
+  .services .service_item .service-text {
+    width: 60%; }
+    .services .service_item .service-text:first-child {
+      margin-right: 65px; }
+    .services .service_item .service-text:last-child {
+      margin-left: 65px; }
+  .services .service_item .text-p {
+    color: #777777;
+    font: 400 18px/24px "Brandon Grotesque";
+    letter-spacing: -0.45px; }
+
+.services .service_list {
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.services .service_item-1 {
+  display: flex;
+  margin: 0 40px 50px; }
+  .services .service_item-1 .kolo {
+    width: 72px;
+    height: 71px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 1px black; }
+  .services .service_item-1 .text-p {
+    width: 240px; }
+
+@media (max-width: 1200px) {
+  .services {
+    text-align: center; }
+    .services .service_item {
+      margin: 50px auto; }
+      .services .service_item .service-text:first-child {
+        margin: 0 auto; }
+      .services .service_item .service-text:last-child {
+        margin: 0 auto; }
+    .services .service_item-1 {
+      margin: 0 auto 25px; }
+    .services .service-img {
+      display: none; }
+    .services .service_list {
+      height: auto; } }
+
+.clients {
+  text-align: center;
+  color: #777777;
+  font: 400 22px "Brandon Grotesque";
+  letter-spacing: -0.55px; }
+  .clients .title {
+    text-align: center; }
+  .clients .client-item1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .clients .client-item2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse; }
+  .clients .clients-text {
+    width: 60%; }
+
+.logos-item {
+  margin: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #111111; }
+  .team .team-container {
+    width: 220px;
+    height: 221px;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    background-color: #111111; }
+  .team .title {
+    color: #ffffff; }
+  .team .team_p {
+    margin-bottom: 70px;
+    color: #777777;
+    font: 400 22px "Brandon Grotesque";
+    letter-spacing: -0.55px; }
+  .team .team_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .team .team_block .team-container {
+      margin-bottom: 20px; }
+    .team .team_block .icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px; }
+  .team .icon-item {
+    width: 41px;
+    height: 41px;
+    border: 3px solid #ffffff;
+    background-color: #111111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 0 10px; }
+  .team .big-text {
+    text-align: center;
+    color: #ebebeb;
+    font: 400 20px/30px "Brandon Grotesque"; }
+  .team .small-text {
+    color: #ffffff;
+    margin: 15px 0;
+    font: 400 16px/20px "Brandon Grotesque"; }
+
+.footer {
+  padding: 100px 0 30px;
+  background-color: #7690c5; }
+  .footer .contact {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #87a0d2;
+    padding-bottom: 100px;
+    margin-bottom: 30px; }
+  .footer .title {
+    color: #ffffff;
+    margin-top: 15px; }
+  .footer .contact-block {
+    max-width: 470px;
+    flex-grow: 1; }
+    .footer .contact-block ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 175px;
+      margin-top: 50px; }
+    .footer .contact-block li {
+      display: flex;
+      margin-bottom: 25px;
+      margin-right: 35px;
+      color: #ffffff; }
+    .footer .contact-block i {
+      font-size: 24px;
+      margin-right: 10px; }
+  .footer form {
+    max-width: 470px;
+    flex-grow: 1; }
+  .footer input {
+    width: 456px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    background-color: #d4d4d4; }
+  .footer textarea {
+    width: 456px;
+    height: 210px;
+    padding: 17px 0 0 20px;
+    border: 1px solid #cccccc;
+    background-color: #d4d4d4;
+    resize: none; }
+  .footer .form__item {
+    color: #bbbbbb;
+    font-family: "Brandon Grotesque";
+    font-size: 18px;
+    font-weight: 500; }
+  .footer .footer-text {
+    text-align: center; }

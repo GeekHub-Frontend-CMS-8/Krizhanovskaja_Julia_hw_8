@@ -1,0 +1,66 @@
+.services
+    .service_item
+        margin: 100px auto
+        display: flex
+        .service-text
+            width: 60%
+            &:first-child
+                margin-right: 65px
+            &:last-child
+                margin-left: 65px
+
+        .text-p
+            color: #777777
+            font: 400 18px/24px "Brandon Grotesque"
+            letter-spacing: -0.45px
+        h3
+        color: #222222
+        font: 500 22px "Brandon Grotesque"
+        letter-spacing: -0.55px
+
+    .service_list
+        height: 450px
+        display: flex
+        flex-wrap: wrap
+
+    .service_item-1
+        display: flex
+        margin: 0 40px 50px
+
+        .kolo
+            width: 72px
+            height: 71px
+            display: flex
+            margin-right: 20px
+            justify-content: center
+            background-color: $black-color
+            border-radius: 50%
+            border: solid 1px $black-color
+
+        .text-p
+            width: 240px
+
+
+@media (max-width: 1200px)
+    .services
+        text-align: center
+        .service_item
+            margin: 50px auto
+            .service-text
+                &:first-child
+                    margin: 0 auto
+                &:last-child
+                    margin: 0 auto
+
+        .service_item-1
+            margin: 0 auto 25px
+        .service-img
+            display: none
+
+        .service_list
+            height: auto
+
+@media (max-width: 768px)
+    .services
+        .title
+            fz
